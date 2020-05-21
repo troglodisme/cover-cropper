@@ -170,7 +170,7 @@
         <p> anteprima versione mobile</p>
 
 
-      </div> 
+      </div>
     </div> <!-- flexbox container -->
 
 
@@ -211,8 +211,9 @@
           cropper.replace(url);
         });
 
+
         const cropper = new Cropper(image, {
-          aspectRatio: 1920 / 654, // size of output image
+          aspectRatio: 2160 / 1080, // size of output image
           viewMode: 1, // restricts crop area to image area
           preview: preview,
           autoCropArea: 1,
@@ -244,7 +245,7 @@
 
           let blob = cropper.getCroppedCanvas({
             // options
-            maxWidth: 1920
+            maxWidth: 2160
           }).toBlob(function(blob) {
               url = URL.createObjectURL(blob);
               result.src = url;
