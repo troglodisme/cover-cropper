@@ -3,7 +3,7 @@
 
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <title>UNIFI COVER CROPPER</title>
+  <title>COVER CROPPER</title>
 
 
 
@@ -112,25 +112,24 @@
   <div class="wrapper">
 
     <h1>
-      Unifi Cover Cropper (Beta)
+       Cover Cropper
     </h1>
     <p>
-      Utility per la creazione di immagini di copertina per i siti dei dipartimenti di <a href="http://www.unifi.it">unifi.it</a> <br>
-      (output richiesto: jpg 1920x654px &lt;300kb)
+      Crop images for nvite -   output resolution: jpg 2160x1080px &lt;300kb)
     </p>
     <hr>
 
     <div class="flex">
       <div>
         <p>
-          Scegliere un'immagine di prova:
-          <button id="img_uno" class="button button-outline">UNO</button>
-          <button id="img_due" class="button button-outline">DUE</button>
-          <button id="img_tre" class="button button-outline">TRE</button>
+          Try with a test image:
+          <button id="img_uno" class="button button-outline">Seaside</button>
+          <button id="img_due" class="button button-outline">Road</button>
+          <button id="img_tre" class="button button-outline">Butterfly</button>
           &nbsp
       </div>
       <div>
-        oppure caricare un'immagine: <input id="image_loader" type=file>
+        or Upload your image here: <input id="image_loader" type=file>
         </p>
       </div>
     </div>
@@ -148,10 +147,10 @@
           <img class="cropper" id="image" src="sample_uno.jpg">
         </div>
         <p>
-          Risoluzione origine: <span id="info"> </span> &nbsp
+          Original resolution: <span id="info"> </span> &nbsp
           <br>
-          <a href="#" id="download_link" download="cropped.jpg">SCARICA IMMAGINE RITAGLIATA</a>
-          <span id="alert">RISOLUZIONE TROPPO BASSA</span>
+          <a href="#" id="download_link" download="cropped.jpg">Download cropped image</a>
+          <span id="alert">Original resolution is too low</span>
       </div>
 
       <div class="wrapper" id="anteprima_wrapper">
@@ -159,7 +158,7 @@
         <div class="preview-container">
           <img class="preview" id="result"><br>
         </div>
-        <p> anteprima versione desktop</p>
+        <p> Desktop preview</p>
 
 
         <div class="preview-container">
@@ -167,12 +166,11 @@
           <div class="mask" id="left-mask"></div>
           <div class="mask" id="right-mask"></div>
         </div>
-        <p> anteprima versione mobile</p>
+        <p> Mobile desktop</p>
 
 
       </div>
     </div> <!-- flexbox container -->
-
 
 
 
